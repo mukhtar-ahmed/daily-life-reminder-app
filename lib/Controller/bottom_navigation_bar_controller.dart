@@ -1,3 +1,4 @@
+import 'package:daily_life_reminder_app/Counter/counter_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/chat_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/notifaction_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/person_screen.dart';
@@ -41,7 +42,7 @@ class BottomNavigationBarController extends GetxController {
 
   final screen = [
     LocationScreen(),
-    const NotifactionScreen(),
+    const CounterScreen(),
     const PlaceAnAddScreen(),
     const ChatScreen(),
     const PersonScreen()
