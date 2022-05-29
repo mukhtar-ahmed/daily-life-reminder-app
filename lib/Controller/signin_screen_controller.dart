@@ -1,5 +1,4 @@
 import 'package:daily_life_reminder_app/Views/Screens/bottom_navigation_bar_screen.dart';
-import 'package:daily_life_reminder_app/Weather/Screens/loading_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,7 +22,7 @@ class SigninScreenController extends GetxController {
           .signInWithEmailAndPassword(email: email, password: password)
           .then((uid) => {
                 Get.snackbar('SignIn', 'SignIn Successfully'),
-                Get.toNamed(LoadingScreen.id)
+                Get.toNamed(BottomNavigationBarScreen.id)
               })
           .catchError((e) {
         Get.snackbar('SignIn', 'SignIn UnSuccessfully',

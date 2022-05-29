@@ -13,7 +13,7 @@ class _NotifactionScreenState extends State<NotifactionScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notifaction Screen'),
+        title: const Text('Notifaction Screen'),
       ),
     );
   }

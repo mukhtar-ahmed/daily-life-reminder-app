@@ -9,7 +9,7 @@ import 'package:daily_life_reminder_app/Views/Screens/sign_in_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/signup_fb_google_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/splash_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/splash_screen2.dart';
-import 'package:daily_life_reminder_app/Weather/Screens/loading_screen.dart';
+import 'package:daily_life_reminder_app/Weather/screens/location_screen.dart';
 import 'package:daily_life_reminder_app/constant.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: kPrimaryColor,
         ),
-        home: const SplashScreen(),
+        home: SplashScreen(),
         getPages: [
           GetPage(name: SplashScreen.id, page: () => const SplashScreen()),
           GetPage(name: SplashScreen2.id, page: () => const SplashScreen2()),
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
               name: PlaceAnAddScreen.id, page: () => const PlaceAnAddScreen()),
           GetPage(name: ChatScreen.id, page: () => const ChatScreen()),
           GetPage(name: PersonScreen.id, page: () => const PersonScreen()),
-          GetPage(name: LoadingScreen.id, page: () =>  LoadingScreen()),
+          GetPage(name: LocationScreen.id, page: () => LocationScreen()),
         ],
       ),
     );

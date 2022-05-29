@@ -8,7 +8,7 @@ class PlaceAnAddScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Place An add'),
+        title: const  Text('Place An add'),
       ),
     );
   }

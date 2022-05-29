@@ -1,4 +1,4 @@
-import 'package:daily_life_reminder_app/Controller/bottomNavigationBarController.dart';
+import 'package:daily_life_reminder_app/Controller/bottom_navigation_bar_controller.dart';
 import 'package:daily_life_reminder_app/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

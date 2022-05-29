@@ -2,7 +2,7 @@ import 'package:daily_life_reminder_app/Views/Screens/chat_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/notifaction_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/person_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/place_an_add_screen.dart';
-import 'package:daily_life_reminder_app/Weather/Screens/location_screen.dart';
+import 'package:daily_life_reminder_app/Weather/screens/location_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -41,10 +41,10 @@ class BottomNavigationBarController extends GetxController {
 
   final screen = [
     LocationScreen(),
-    NotifactionScreen(),
-    PlaceAnAddScreen(),
-    ChatScreen(),
-    PersonScreen()
+    const NotifactionScreen(),
+    const PlaceAnAddScreen(),
+    const ChatScreen(),
+    const PersonScreen()
   ];
 
   onTap(index) {

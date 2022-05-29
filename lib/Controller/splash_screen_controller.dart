@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 class SplashScreenController extends GetxController {
   @override
   void onInit() {
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Get.toNamed(SplashScreen2.id);
     });
     super.onInit();

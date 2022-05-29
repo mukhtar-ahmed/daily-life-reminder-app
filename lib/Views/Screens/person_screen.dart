@@ -8,7 +8,7 @@ class PersonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Person Screen'),
+        title: const Text('Person Screen'),
       ),
     );
   }

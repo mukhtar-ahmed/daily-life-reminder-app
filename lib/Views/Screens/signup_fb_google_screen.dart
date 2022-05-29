@@ -1,7 +1,6 @@
 import 'package:daily_life_reminder_app/Views/Screens/registration_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/sign_in_screen.dart';
 import 'package:daily_life_reminder_app/Views/Widget/custome_button.dart';
-import 'package:daily_life_reminder_app/Views/Widget/custome_round_button.dart';
 import 'package:daily_life_reminder_app/Views/Widget/custome_text.dart';
 import 'package:daily_life_reminder_app/constant.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,7 @@ class SignupFbGoogleScreen extends StatelessWidget {
                   color: Colors.black.withOpacity(0.8),
                   spreadRadius: 10,
                   blurRadius: 5,
-                  offset: Offset(0, 7), // changes position of shadow
+                  offset: const Offset(0, 7), // changes position of shadow
                 ),
               ],
               image: DecorationImage(
@@ -124,41 +123,6 @@ class SignupFbGoogleScreen extends StatelessWidget {
               ),
               SizedBox(
                 height: 30.h,
-              ),
-              CustomeText(
-                text: 'Continue with',
-                fontSize: 14.sp,
-                color: kWhiteColor,
-              ),
-              SizedBox(
-                height: 30.h,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  /* ---------------------------- FB Rounder Button --------------------------- */
-                  const CustomeRoundButton(
-                    bgimage: AssetImage('images/fb.png'),
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    width: 10.w,
-                  ),
-                  CustomeText(
-                    text: 'OR',
-                    fontSize: 14.sp,
-                    color: kWhiteColor,
-                  ),
-                  /* -------------------------- Google Rounder Button ------------------------- */
-                  SizedBox(
-                    width: 10.w,
-                  ),
-                  const CustomeRoundButton(
-                    bgimage: AssetImage('images/gmail.png'),
-                    color: Colors.white,
-                  )
-                ],
               ),
             ],
           ),

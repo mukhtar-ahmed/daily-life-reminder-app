@@ -48,8 +48,8 @@ class CustomeTextFormField extends StatelessWidget {
               decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: hintText,
-                  labelText: labelText,
-                  labelStyle: TextStyle(color: kGreyColor)),
+                  //labelText: labelText,
+                  labelStyle: const TextStyle(color: kGreyColor)),
               validator: validate,
             ),
           ),

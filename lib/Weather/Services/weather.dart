@@ -1,7 +1,7 @@
-import 'package:daily_life_reminder_app/Weather/Services/location.dart';
-import 'package:daily_life_reminder_app/Weather/Services/networking.dart';
+import 'package:daily_life_reminder_app/Weather/services/location.dart';
+import 'package:daily_life_reminder_app/Weather/services/networking.dart';
 
-const apiKey = 'e72ca729af228beabd5d20e3b7749713';
+const apiKey = '841cbbb7fd735ef05471dd8f90db4db1';
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
 
 class WeatherModel {

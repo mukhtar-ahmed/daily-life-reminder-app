@@ -1,8 +1,6 @@
 import 'package:daily_life_reminder_app/Controller/signin_screen_controller.dart';
-import 'package:daily_life_reminder_app/Views/Screens/bottom_navigation_bar_screen.dart';
 import 'package:daily_life_reminder_app/Views/Screens/registration_screen.dart';
 import 'package:daily_life_reminder_app/Views/Widget/custome_button.dart';
-import 'package:daily_life_reminder_app/Views/Widget/custome_round_button.dart';
 import 'package:daily_life_reminder_app/Views/Widget/custome_text.dart';
 import 'package:daily_life_reminder_app/Views/Widget/custome_text_form_field.dart';
 import 'package:daily_life_reminder_app/constant.dart';
@@ -30,7 +28,8 @@ class SignInScreen extends StatelessWidget {
                         color: Colors.black.withOpacity(0.8),
                         spreadRadius: 10,
                         blurRadius: 5,
-                        offset: Offset(0, 7), // changes position of shadow
+                        offset:
+                            const Offset(0, 7), // changes position of shadow
                       ),
                     ],
                     image: DecorationImage(
@@ -153,18 +152,6 @@ class SignInScreen extends StatelessWidget {
                           SizedBox(
                             height: 30.h,
                           ),
-                          CustomeText(
-                            text: 'Continue with',
-                            fontSize: 14.sp,
-                            color: kWhiteColor,
-                          ),
-                          SizedBox(
-                            height: 30.h,
-                          ),
-                          const CustomeRoundButton(
-                            bgimage: AssetImage('images/gmail.png'),
-                            color: Colors.white,
-                          )
                         ],
                       ),
                     ),

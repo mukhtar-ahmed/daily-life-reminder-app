@@ -1,4 +1,4 @@
-import 'package:daily_life_reminder_app/Weather/Utilities/constants.dart';
+import 'package:daily_life_reminder_app/constant.dart';
 import 'package:flutter/material.dart';
 
 class CityScreen extends StatefulWidget {
