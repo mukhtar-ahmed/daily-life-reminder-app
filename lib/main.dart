@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: kPrimaryColor,
         ),
-        home: BottomNavigationBarScreen(),
+        home: SplashScreen(),
         getPages: [
           GetPage(name: SplashScreen.id, page: () => const SplashScreen()),
           GetPage(name: SplashScreen2.id, page: () => const SplashScreen2()),
